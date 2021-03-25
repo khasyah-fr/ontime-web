@@ -4,18 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BootstrapCSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <!-- CustomCSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
     <title>Ontime | JointsCamp</title>
 </head>
 <body>
-    <!-- Header -->
-        <!-- Nav -->
+    <!-- Main container -->
+    <div class="top-container">
+        <!-- Header -->
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                <a class="navbar-brand fs-2" href="index.html">Ontime</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-lg-auto me-lg-5">
+                    <a class="nav-link" href="product.html">Product</a>
+                    <a class="nav-link" href="features.html">Features</a>
+                    </div>
+                </div>
+                </div>
+            </nav>
+        </header>
 
-    <!-- Content for Home page -->
+        <!-- Home Content -->
+        <div class="head">
+            <h1 class="head-text">Unlock Your <br> Team <span class="accent">Performance</span></h1>
+            <h6>Ontime is the most popular time tracking company in the world<br>so everyone can focus on the word that matters</h6>
+            <button type="button" class="trial-btn btn btn-lg btn-danger"><i class="me-2 fa fa-play-circle" aria-hidden="true"></i>Start 7 Day Free Trial<i class="ms-3 ms-md-5 ps-5 fa fa-arrow-right trial-btn-icon" aria-hidden="true"></i></button>
+        </div>
 
+        <!-- SVG -->
+        <div class="img-container">   
+            <img src="assets/images/collaboration.svg" alt="Image" id="big-image">
+        </div>
 
-    <!-- Footer -->
+        <footer class="bottom px-5 py-2">
+            <p>&copy; Copyright 2021 Ontime Corporation</p>
+        </footer>
+    </div>
 
+    <script src="https://kit.fontawesome.com/9eb9c4b94d.js" crossorigin="anonymous"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 </html>

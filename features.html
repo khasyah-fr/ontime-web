@@ -4,18 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BootstrapCSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- CustomCSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Ontime | JointsCamp</title>
 </head>
 <body>
-    <!-- Header -->
-        <!-- Nav -->
+    <!-- Main container -->
+    <div class="top-container">
+        <!-- Header -->
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                <a class="navbar-brand fs-2" href="index.html">Ontime</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-lg-auto me-lg-5">
+                    <a class="nav-link" href="product.html">Product</a>
+                    <a class="nav-link active" href="features.html">Features</a>
+                    </div>
+                </div>
+                </div>
+            </nav>
+        </header>
 
-    <!-- Content for Features Page -->
-    
+        <!-- Features Content -->
+        <section class="head d-flex justify-content-center align-items-center p-5 p-md-0">
+            <div class="row">
+                <div class="col-12 col-lg-4 text-center text-lg-start my-5 my-md-0 animate__animated animate__rubberBand">
+                    <h1 class="mb-5">Something big is coming</h1>
+                    <button type="button" class="btn btn-custom">Learn more</button>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-12 col-lg-6 d-flex flex-column align-items-center animate__animated animate__backInRight">
+                      <div class="row features my-5 mt-lg-0 px-4 pt-4">
+                           <div class="col-lg-4 col-12">
+                              <img class="img-fluid mb-3" width="100px" src="/assets/images/feature.png" alt="features">
+                          </div>
+                          <div class="col-lg-8 col-12">
+                              <h4>6+ New Features</h4>
+                              <p>Here's some features coming your way!</p>
+                          </div>
+                          <div class="showMore d-flex flex-column align-items-center">
+                            <ul id="more"style="display: none;">
+                              <li>Deadline.</li>
+                              <li>Roles & Permissions.</li>
+                              <li>Ticketing System.</li>
+                              <li>Monthly Reporting.</li>
+                              <li>Personalization.</li>
+                              <li>Customer Service.</li>
+                            </ul>
+                            <button id="myBtn" onclick="showMore()">	&#709;</button>
+                        </div>
+                      </div>
+                      <div class="row boost pt-4 px-4 mb-4 mb-lg-0">
+                          <div class="col-lg-4 col-12">
+                              <img class="img-fluid mb-3" width="100px" src="/assets/images/boost.png" alt="boost">
+                          </div>
+                          <div class="col-lg-8 col-12">
+                              <h4>200% Boost your time</h4>
+                              <p>Ontime significantly reduces workload</p>
+                          </div>
+                          <div class="showMore d-flex flex-column align-items-center">
+                            <p class="text-start text" id="smore" style="display: none;">
+                              Productivity is a crucial element for a company to thrive. Manage & Track worktime with ease using Ontime!
+                            </p>
+                            <button id="myBtn2" onclick="showMore2()">	&#709;</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Footer -->
+        <footer class="bottom px-5 py-2">
+            <p>&copy; Copyright 2021 Ontime Corporation</p>
+        </footer>
+    </div>
 
+    <script src="assets/js/script.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 </html>
