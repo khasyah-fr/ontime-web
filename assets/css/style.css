@@ -57,6 +57,8 @@ nav {
 .head h1{
     color: var(--main-darkblue);
     font-weight: 700;
+    font-size:3.5rem;
+    width: 100%;
 }
 .head .btn-custom{
     background-color: #00a6ab;
